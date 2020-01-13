@@ -12,7 +12,7 @@ matrix:
 #          - VSCODE_VERSION="1.41.0" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="linux"
      - os: linux
        dist: buster
-       arch: arm
+       arch: armhf
        env:
           - VSCODE_VERSION="1.41.1" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="linux"
 #     - os: linux
