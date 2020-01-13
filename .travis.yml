@@ -4,17 +4,17 @@ node_js:
 
 matrix:
    include:
-     - os: osx
-       env:
-          - VSCODE_VERSION="1.41.1" MINIFY="true" PACKAGE="true" VERSION="lkgr"
+#     - os: osx
+#       env:
+#          - VSCODE_VERSION="1.41.1" MINIFY="true" PACKAGE="true" VERSION="lkgr"
 #     - os: linux
 #       env:
 #          - VSCODE_VERSION="1.41.0" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="linux"
-#     - os: linux
-#       dist: xenial
-#       arch: arm64
-#       env:
-#          - VSCODE_VERSION="1.41.0" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="raspbian"
+     - os: linux
+       dist: buster
+       arch: arm
+       env:
+          - VSCODE_VERSION="1.41.1" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="linux"
 #     - os: linux
 #       env:
 #          - VSCODE_VERSION="1.41.0" MINIFY="true" PACKAGE="true" VERSION="lkgr" TARGET="alpine"
